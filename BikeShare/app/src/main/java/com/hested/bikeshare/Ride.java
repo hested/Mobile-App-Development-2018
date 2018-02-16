@@ -7,7 +7,7 @@ package com.hested.bikeshare;
  * Time:     23:34
  * Author:   Johnni Hested
  */
-public class Ride {
+class Ride {
     private String mBikeName;
     private String mStartRide;
 
@@ -15,6 +15,8 @@ public class Ride {
         mBikeName = name;
         mStartRide = start;
     }
+
+
     public String getBikeName() {
         return mBikeName;
     }

@@ -14,6 +14,7 @@ public class EndRideActivity extends AppCompatActivity {
     private Button endRide;
     private TextView lastAdded;
     private TextView newWhat, newWhere;
+    private RidesDB mRides;
     private Ride last= new Ride("", "");
 
     @Override
@@ -21,7 +22,9 @@ public class EndRideActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout. activity_end_ride);
 
-        // Set title
+        mRides = RidesDB.getInstance();
+
+        // Set rideLocation
         setTitle("End Ride Activity");
 
         // Texts
